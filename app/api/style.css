@@ -11,22 +11,16 @@ body {
 }
 
 
-/* .container {
-  background: white;
-  padding: 30px 40px;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  width: 90%;
-  max-width: 400px;
-  box-sizing: border-box;
-} */
-
 
 
  .container {
   max-width: 500px;
   margin: 40px auto;
+    background: white;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 90%;
   text-align: center;
 }
 
@@ -67,20 +61,6 @@ form {
 }
 
 
-/* input[type="text"] {
-  padding: 10px 15px;
-  font-size: 1rem;
-  border: 2px solid #ccc;
-  border-radius: 6px;
-  transition: border-color 0.3s;
-  width: 100%;
-  box-sizing: border-box;
-} */
-
-input[type="text"]:focus {
-  border-color: #0070f3;
-  outline: none;
-}
 
 
 button.search {
@@ -93,7 +73,7 @@ button.search {
   border-radius: 6px;
   cursor: pointer;
   transition: background-color 0.3s;
-  width: 100%;
+  width: 98%;
 }
 
 button.search:hover {
@@ -110,6 +90,7 @@ button.search:hover {
 .weather-info {
   margin-top: 20px;
   text-align: left;
+  margin-left: 20px;
 }
 
 .weather-info h2 {
