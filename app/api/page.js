@@ -58,7 +58,7 @@ export default function Home() {
                         setCity("");
                     }}
                 >
-                    <option value="">Select Country</option>
+                    <option value="" className="bold">Select Country</option>
                     {countries.map((c) => (
                         <option key={c.isoCode} value={c.isoCode}>
                             {c.name}
@@ -75,7 +75,7 @@ export default function Home() {
                     }}
                     disabled={!country}
                 >
-                    <option value="">Select State</option>
+                    <option value="" className="bold"> Select State</option>
                     {states.map((s) => (
                         <option key={s.isoCode} value={s.isoCode}>
                             {s.name}
@@ -89,7 +89,7 @@ export default function Home() {
                     onChange={(e) => setCity(e.target.value)}
                     disabled={!state}
                 >
-                    <option value="">Select City</option>
+                    <option value="" className="bold">Select City</option>
                     {cities.map((ct) => (
                         <option key={ct.name} value={ct.name}>
                             {ct.name}

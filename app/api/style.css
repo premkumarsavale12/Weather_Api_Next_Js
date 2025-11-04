@@ -9,6 +9,8 @@ body {
   align-items: center;
   min-height: 100vh;
   animation: fadeIn 1.2s ease;
+  min-height: 100vh;   /* Fallback for older browsers */
+min-height: 100dvh;
 }
 
 /* Main Container */
@@ -83,6 +85,9 @@ button.search:hover {
   background: linear-gradient(135deg, #005bb5, #0097e6);
   box-shadow: 0 4px 12px rgba(0, 112, 243, 0.4);
   transform: translateY(-2px);
+}
+.bold{
+   font-weight: bold;
 }
 
 button.search:disabled {
