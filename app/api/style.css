@@ -1,0 +1,137 @@
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f0f4f8;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+
+/* .container {
+  background: white;
+  padding: 30px 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+  box-sizing: border-box;
+} */
+
+
+
+ .container {
+  max-width: 500px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+select,
+input,
+button {
+  padding: 10px;
+  margin: 8px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button.search {
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button.search:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+h1 {
+  margin-bottom: 25px;
+  color: #333;
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+
+/* input[type="text"] {
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  transition: border-color 0.3s;
+  width: 100%;
+  box-sizing: border-box;
+} */
+
+input[type="text"]:focus {
+  border-color: #0070f3;
+  outline: none;
+}
+
+
+button.search {
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+
+button.search:hover {
+  background-color: #005bb5;
+}
+
+
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+
+.weather-info {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.weather-info h2 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.weather-info p {
+  margin: 4px 0;
+}
+
+/* Responsive tweaks */
+@media (max-width: 480px) {
+  .container {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  button.search, input[type="text"] {
+    font-size: 0.95rem;
+  }
+}
