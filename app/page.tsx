@@ -1,12 +1,9 @@
-import Link from "next/link";
 
+import Page from "./api/page"
 export default function Home() {
   return (
     <>
-      <h1> This is Pratical Task... </h1>
-
-      <Link href={"/api"} style={{ textDecoration: "none" }}> Go to Weather Api </Link>
-
+      <Page />
 
     </>
   );
